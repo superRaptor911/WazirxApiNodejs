@@ -1,6 +1,4 @@
-import { wazirxGetOrderInfo } from "./wazirx/api";
-import { initWazirx } from "./wazirx/request";
+import { wazirxApi } from "./wazirx/request";
 
-initWazirx("", "");
-wazirxGetOrderInfo("123456");
-console.log("hello");
+export default wazirxApi;
+Object.assign(module.exports, wazirxApi);
