@@ -1,8 +1,9 @@
 {
     "name": "wazirx-api",
-    "version": "1.0.3",
+    "version": "1.0.6",
     "description": "Wazirx Api for JS",
-    "main": "./lib/index.js",
+    "main": "lib/index.js",
+    "files": ["lib"],
     "author": "Aditya Aravind (superRaptor911) <raptor.inc2018@gmail.com>",
     "license": "MIT",
     "dependencies": {
