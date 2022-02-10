@@ -1,18 +1,21 @@
 {
     "compilerOptions": {
         "module": "CommonJS",
-        "target": "ESNext",
-        "lib": [
-            "ESNext"
-        ],
+        "incremental": true,
+        "target": "es6",
         "sourceMap": true,
-        "outDir": "./dist",
+        "outDir": "lib",
+        "declaration": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
         "strict": true,
         "moduleResolution": "node",
-        "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "types": [
             "node"
         ]
-    }
+    },
+    "include": [
+        "src"
+    ]
 }

@@ -1,6 +1,6 @@
 {
     "name": "wazirx-api",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Wazirx Api for JS",
     "main": "index.js",
     "author": "Aditya Aravind (superRaptor911) <raptor.inc2018@gmail.com>",
