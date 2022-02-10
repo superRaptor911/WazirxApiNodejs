@@ -1,8 +1,8 @@
 import crypto from "crypto";
 import fetch from "cross-fetch";
 
-let secretKey = null;
-let apiKey = null;
+let secretKey: null | string = null;
+let apiKey: null | string = null;
 const server = "https://api.wazirx.com";
 
 function getSignature(key: string, params: any) {

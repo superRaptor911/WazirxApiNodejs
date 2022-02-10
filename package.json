@@ -8,8 +8,7 @@
     "dependencies": {
         "body-parser": "^1.19.0",
         "cors": "^2.8.5",
-        "cross-fetch": "^3.1.5",
-        "typescript": "^4.5.5"
+        "cross-fetch": "^3.1.5"
     },
     "devDependencies": {
         "@types/cors": "^2.8.12",
@@ -22,7 +21,13 @@
         "eslint-plugin-import": "^2.24.2",
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-promise": "^5.1.0",
+        "typescript": "^4.5.5",
         "prettier": "^2.4.1"
     },
+    "keywords": [
+        "wazirx",
+        "nodejs",
+        "crypto"
+    ],
     "private": false
 }
