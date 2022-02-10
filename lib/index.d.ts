@@ -1,2 +1,2 @@
 import { wazirxApi } from './wazirx/api';
-export default wazirxApi;
+export { wazirxApi };

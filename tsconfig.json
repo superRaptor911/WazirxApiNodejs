@@ -1,16 +1,14 @@
 {
     "compilerOptions": {
         "module": "CommonJS",
-        "incremental": true,
         "target": "es6",
         "sourceMap": true,
         "outDir": "lib",
         "declaration": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
         "strict": true,
-        "moduleResolution": "node",
         "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
         "types": [
             "node"
         ]

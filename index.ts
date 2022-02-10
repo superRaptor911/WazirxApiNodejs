@@ -1,4 +1,4 @@
 import {wazirxApi} from './wazirx/api';
 
-export default wazirxApi;
+export {wazirxApi};
 Object.assign(module.exports, wazirxApi);
