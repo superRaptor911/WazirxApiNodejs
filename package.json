@@ -1,6 +1,6 @@
 {
     "name": "wazirx-api",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Wazirx Api for JS",
     "main": "lib/index.js",
     "files": ["lib"],
