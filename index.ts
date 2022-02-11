@@ -1,4 +1,8 @@
-import {wazirxApi} from './wazirx/api';
-
-export {wazirxApi};
-Object.assign(module.exports, wazirxApi);
+export {
+  wazirxCancelOrder,
+  wazirxGetAllOdersFor,
+  wazirxGetOrderInfo,
+  wazirxInit,
+  wazirxOrderLimit,
+  wazirxOrderLimitTest,
+} from './wazirx/api';
