@@ -5,6 +5,7 @@ import {
   initWazirx,
 } from './request';
 
+// Initiate Wazirx Api with your keys
 export function wazirxInit(secretKey: string, apiKey: string) {
   initWazirx(secretKey, apiKey);
 }
