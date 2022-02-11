@@ -5,11 +5,16 @@ import {
   initWazirx,
 } from './request';
 
-// Initiate Wazirx Api with your keys
+/**
+ * Initiate Wazirx Api with your keys
+ */
 export function wazirxInit(secretKey: string, apiKey: string) {
   initWazirx(secretKey, apiKey);
 }
 
+/**
+ * Get System time
+ */
 export async function wazirxGetSystemTime() {
   try {
     const response = await wazirxGetRequest('/sapi/v1/time');

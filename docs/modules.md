@@ -6,68 +6,52 @@
 
 ### Functions
 
-- [wazirxCancelAllOpenOrders](modules.md#wazirxcancelallopenorders)
-- [wazirxCancelOrder](modules.md#wazirxcancelorder)
-- [wazirxGetAccountInformation](modules.md#wazirxgetaccountinformation)
-- [wazirxGetAllOdersFor](modules.md#wazirxgetallodersfor)
-- [wazirxGetAllOpenOders](modules.md#wazirxgetallopenoders)
+- [wazirxInit](modules.md#wazirxinit)
+- [wazirxGetSystemTime](modules.md#wazirxgetsystemtime)
 - [wazirxGetExchangeInfo](modules.md#wazirxgetexchangeinfo)
-- [wazirxGetFundDetails](modules.md#wazirxgetfunddetails)
-- [wazirxGetOldTradeList](modules.md#wazirxgetoldtradelist)
 - [wazirxGetOrderBook](modules.md#wazirxgetorderbook)
 - [wazirxGetRecentTradeList](modules.md#wazirxgetrecenttradelist)
-- [wazirxGetSystemTime](modules.md#wazirxgetsystemtime)
-- [wazirxInit](modules.md#wazirxinit)
+- [wazirxGetOldTradeList](modules.md#wazirxgetoldtradelist)
+- [wazirxGetAllOdersFor](modules.md#wazirxgetallodersfor)
+- [wazirxQueryOrder](modules.md#wazirxqueryorder)
+- [wazirxGetAllOpenOders](modules.md#wazirxgetallopenoders)
+- [wazirxCancelOrder](modules.md#wazirxcancelorder)
+- [wazirxCancelAllOpenOrders](modules.md#wazirxcancelallopenorders)
 - [wazirxPlaceNewOrder](modules.md#wazirxplaceneworder)
 - [wazirxPlaceNewOrderTest](modules.md#wazirxplacenewordertest)
-- [wazirxQueryOrder](modules.md#wazirxqueryorder)
+- [wazirxGetAccountInformation](modules.md#wazirxgetaccountinformation)
+- [wazirxGetFundDetails](modules.md#wazirxgetfunddetails)
 
 ## Functions
 
-### wazirxCancelAllOpenOrders
+### wazirxInit
 
-▸ **wazirxCancelAllOpenOrders**(`symbol`): `Promise`<`any`\>
+▸ **wazirxInit**(`secretKey`, `apiKey`): `void`
 
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `symbol` | `string` |
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-[api.ts:138](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L138)
-
-___
-
-### wazirxCancelOrder
-
-▸ **wazirxCancelOrder**(`symbol`, `orderId`): `Promise`<`any`\>
+Initiate Wazirx Api with your keys
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `symbol` | `string` |
-| `orderId` | `string` |
+| `secretKey` | `string` |
+| `apiKey` | `string` |
 
 #### Returns
 
-`Promise`<`any`\>
+`void`
 
 #### Defined in
 
-[api.ts:125](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L125)
+[api.ts:11](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L11)
 
 ___
 
-### wazirxGetAccountInformation
+### wazirxGetSystemTime
 
-▸ **wazirxGetAccountInformation**(): `Promise`<`any`\>
+▸ **wazirxGetSystemTime**(): `Promise`<`any`\>
+
+Get System time
 
 #### Returns
 
@@ -75,7 +59,85 @@ ___
 
 #### Defined in
 
-[api.ts:192](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L192)
+[api.ts:18](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L18)
+
+___
+
+### wazirxGetExchangeInfo
+
+▸ **wazirxGetExchangeInfo**(): `Promise`<`any`\>
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[api.ts:28](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L28)
+
+___
+
+### wazirxGetOrderBook
+
+▸ **wazirxGetOrderBook**(`symbol`, `limit?`): `Promise`<`any`\>
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `symbol` | `string` | `undefined` |
+| `limit` | `number` | `20` |
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[api.ts:38](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L38)
+
+___
+
+### wazirxGetRecentTradeList
+
+▸ **wazirxGetRecentTradeList**(`symbol`, `limit?`): `Promise`<`any`\>
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `symbol` | `string` | `undefined` |
+| `limit` | `number` | `500` |
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[api.ts:51](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L51)
+
+___
+
+### wazirxGetOldTradeList
+
+▸ **wazirxGetOldTradeList**(`symbol`, `limit?`, `fromId?`): `Promise`<`any`\>
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `symbol` | `string` | `undefined` |
+| `limit` | `number` | `500` |
+| `fromId` | `undefined` \| `number` | `undefined` |
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[api.ts:64](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L64)
 
 ___
 
@@ -98,7 +160,27 @@ ___
 
 #### Defined in
 
-[api.ts:77](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L77)
+[api.ts:82](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L82)
+
+___
+
+### wazirxQueryOrder
+
+▸ **wazirxQueryOrder**(`orderId`): `Promise`<`any`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `orderId` | `string` |
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[api.ts:102](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L102)
 
 ___
 
@@ -119,134 +201,48 @@ ___
 
 #### Defined in
 
-[api.ts:109](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L109)
+[api.ts:114](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L114)
 
 ___
 
-### wazirxGetExchangeInfo
+### wazirxCancelOrder
 
-▸ **wazirxGetExchangeInfo**(): `Promise`<`any`\>
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-[api.ts:23](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L23)
-
-___
-
-### wazirxGetFundDetails
-
-▸ **wazirxGetFundDetails**(): `Promise`<`any`\>
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-[api.ts:202](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L202)
-
-___
-
-### wazirxGetOldTradeList
-
-▸ **wazirxGetOldTradeList**(`symbol`, `limit?`, `fromId?`): `Promise`<`any`\>
-
-#### Parameters
-
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `symbol` | `string` | `undefined` |
-| `limit` | `number` | `500` |
-| `fromId` | `undefined` \| `number` | `undefined` |
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-[api.ts:59](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L59)
-
-___
-
-### wazirxGetOrderBook
-
-▸ **wazirxGetOrderBook**(`symbol`, `limit?`): `Promise`<`any`\>
-
-#### Parameters
-
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `symbol` | `string` | `undefined` |
-| `limit` | `number` | `20` |
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-[api.ts:33](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L33)
-
-___
-
-### wazirxGetRecentTradeList
-
-▸ **wazirxGetRecentTradeList**(`symbol`, `limit?`): `Promise`<`any`\>
-
-#### Parameters
-
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `symbol` | `string` | `undefined` |
-| `limit` | `number` | `500` |
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-[api.ts:46](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L46)
-
-___
-
-### wazirxGetSystemTime
-
-▸ **wazirxGetSystemTime**(): `Promise`<`any`\>
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-[api.ts:13](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L13)
-
-___
-
-### wazirxInit
-
-▸ **wazirxInit**(`secretKey`, `apiKey`): `void`
+▸ **wazirxCancelOrder**(`symbol`, `orderId`): `Promise`<`any`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `secretKey` | `string` |
-| `apiKey` | `string` |
+| `symbol` | `string` |
+| `orderId` | `string` |
 
 #### Returns
 
-`void`
+`Promise`<`any`\>
 
 #### Defined in
 
-[api.ts:9](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L9)
+[api.ts:130](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L130)
+
+___
+
+### wazirxCancelAllOpenOrders
+
+▸ **wazirxCancelAllOpenOrders**(`symbol`): `Promise`<`any`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `symbol` | `string` |
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[api.ts:143](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L143)
 
 ___
 
@@ -269,7 +265,7 @@ ___
 
 #### Defined in
 
-[api.ts:150](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L150)
+[api.ts:155](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L155)
 
 ___
 
@@ -292,19 +288,13 @@ ___
 
 #### Defined in
 
-[api.ts:171](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L171)
+[api.ts:176](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L176)
 
 ___
 
-### wazirxQueryOrder
+### wazirxGetAccountInformation
 
-▸ **wazirxQueryOrder**(`orderId`): `Promise`<`any`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `orderId` | `string` |
+▸ **wazirxGetAccountInformation**(): `Promise`<`any`\>
 
 #### Returns
 
@@ -312,4 +302,18 @@ ___
 
 #### Defined in
 
-[api.ts:97](https://github.com/superRaptor911/WazirxApiNodejs/blob/fccc258/wazirx/api.ts#L97)
+[api.ts:197](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L197)
+
+___
+
+### wazirxGetFundDetails
+
+▸ **wazirxGetFundDetails**(): `Promise`<`any`\>
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[api.ts:207](https://github.com/superRaptor911/WazirxApiNodejs/blob/db36ed0/wazirx/api.ts#L207)
