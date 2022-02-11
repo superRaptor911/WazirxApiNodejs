@@ -75,20 +75,18 @@ export async function wazirxDeleteRequest(endpoint: string, data: any) {
   }
 }
 
-export async function wazirxGetRequest(endpoint: string, data?: any) {
+export async function wazirxGetRequest(endpoint: string, data: any = {}) {
   if (!secretKey || !apiKey) {
     throw 'API Keys not defined';
   }
+
   data.timestamp = new Date().getTime();
   data.recvWindow = data.recvWindow ? data.recvWindow : 20000;
   data.signature = getSignature(secretKey, data);
 
-  let url = server + endpoint;
-  if (data) {
-    const qs = new URLSearchParams(data);
-    let string = qs.toString();
-    url = url + '?' + string;
-  }
+  const qs = new URLSearchParams(data);
+  const string = qs.toString();
+  const url = server + endpoint + '?' + string;
 
   try {
     const response = await fetch(url, {
