@@ -13,10 +13,10 @@ async function main() {
   try {
     const myFunds = await wazirxApi.wazirxGetFundDetails();
     console.log(myFunds);
-    // sell 2 ada for 150 rupeees
+    // sell 1 ada at 150 rupeees
     const receipt = await wazirxApi.wazirxPlaceNewOrder(
       "adainr",
-      2,
+      1,
       150,
       "sell"
     );
