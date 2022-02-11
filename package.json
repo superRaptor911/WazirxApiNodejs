@@ -6,6 +6,9 @@
     "files": ["lib"],
     "author": "Aditya Aravind (superRaptor911) <raptor.inc2018@gmail.com>",
     "license": "MIT",
+    "scripts": {
+        "build": "npx tsc"
+    },
     "dependencies": {
         "cross-fetch": "^3.1.5"
     },
