@@ -41,21 +41,21 @@ main();
 
 ### Functions
 
-- [wazirxInit](modules.md#wazirxinit)
-- [wazirxGetSystemTime](modules.md#wazirxgetsystemtime)
-- [wazirxGetExchangeInfo](modules.md#wazirxgetexchangeinfo)
-- [wazirxGetOrderBook](modules.md#wazirxgetorderbook)
-- [wazirxGetRecentTradeList](modules.md#wazirxgetrecenttradelist)
-- [wazirxGetOldTradeList](modules.md#wazirxgetoldtradelist)
-- [wazirxGetAllOdersFor](modules.md#wazirxgetallodersfor)
-- [wazirxQueryOrder](modules.md#wazirxqueryorder)
-- [wazirxGetAllOpenOders](modules.md#wazirxgetallopenoders)
-- [wazirxCancelOrder](modules.md#wazirxcancelorder)
-- [wazirxCancelAllOpenOrders](modules.md#wazirxcancelallopenorders)
-- [wazirxPlaceNewOrder](modules.md#wazirxplaceneworder)
-- [wazirxPlaceNewOrderTest](modules.md#wazirxplacenewordertest)
-- [wazirxGetAccountInformation](modules.md#wazirxgetaccountinformation)
-- [wazirxGetFundDetails](modules.md#wazirxgetfunddetails)
+- [wazirxInit](#wazirxinit)
+- [wazirxGetSystemTime](#wazirxgetsystemtime)
+- [wazirxGetExchangeInfo](#wazirxgetexchangeinfo)
+- [wazirxGetOrderBook](#wazirxgetorderbook)
+- [wazirxGetRecentTradeList](#wazirxgetrecenttradelist)
+- [wazirxGetOldTradeList](#wazirxgetoldtradelist)
+- [wazirxGetAllOdersFor](#wazirxgetallodersfor)
+- [wazirxQueryOrder](#wazirxqueryorder)
+- [wazirxGetAllOpenOders](#wazirxgetallopenoders)
+- [wazirxCancelOrder](#wazirxcancelorder)
+- [wazirxCancelAllOpenOrders](#wazirxcancelallopenorders)
+- [wazirxPlaceNewOrder](#wazirxplaceneworder)
+- [wazirxPlaceNewOrderTest](#wazirxplacenewordertest)
+- [wazirxGetAccountInformation](#wazirxgetaccountinformation)
+- [wazirxGetFundDetails](#wazirxgetfunddetails)
 
 ## Functions
 
