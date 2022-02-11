@@ -7,8 +7,6 @@
     "author": "Aditya Aravind (superRaptor911) <raptor.inc2018@gmail.com>",
     "license": "MIT",
     "dependencies": {
-        "body-parser": "^1.19.0",
-        "cors": "^2.8.5",
         "cross-fetch": "^3.1.5"
     },
     "devDependencies": {
