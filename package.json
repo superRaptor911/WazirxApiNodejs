@@ -1,11 +1,15 @@
 {
     "name": "wazirx-api",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "description": "Wazirx Api for JS",
     "main": "lib/index.js",
     "files": [
         "lib"
     ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/superRaptor911/WazirxApiNodejs.git"
+    },
     "author": "Aditya Aravind (superRaptor911) <raptor.inc2018@gmail.com>",
     "license": "MIT",
     "scripts": {
@@ -37,5 +41,6 @@
         "nodejs",
         "crypto"
     ],
+    "homepage": "https://github.com/superRaptor911/WazirxApiNodejs",
     "private": false
 }
